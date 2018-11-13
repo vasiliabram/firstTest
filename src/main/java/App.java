@@ -18,6 +18,7 @@ public class App
         System.setProperty("webdriver.chrome.driver", "C:\\Files\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         try {
+            
             driver.get("https://www.airportparkingreservations.com");
             driver.findElement(By.id("blended_searchbox")).findElement(By.name("airport")).sendKeys("LAX");
             Thread.sleep(5000);
